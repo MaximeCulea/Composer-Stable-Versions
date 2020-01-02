@@ -24,10 +24,10 @@
 	},
 	"autoload":{
 		"psr-4":{
-			"MaximeCulea\\ComposerScripts\\MakeStablePlugin\\":"src"
+			"MaximeCulea\\ComposerScripts\\ComposerStableVersions\\":"src"
 		}
 	},
 	"extra":{
-		"class":"MaximeCulea\\ComposerScripts\\ComposerMakeStable\\MakeStable"
+		"class":"MaximeCulea\\ComposerScripts\\ComposerStableVersions\\StableVersions"
 	}
 }
