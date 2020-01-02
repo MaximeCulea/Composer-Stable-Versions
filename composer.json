@@ -1,0 +1,33 @@
+{
+	"name":"MaximeCulea/composer-stable-versions",
+	"type":"composer-plugin",
+	"minimum-stability":"stable",
+	"license":"GPL-3.0+",
+	"description":"Make all your composer's dependencies stable.",
+	"keywords":[
+		"composer",
+		"package"
+	],
+	"authors":[
+		{
+			"name":"Maxime Culea",
+			"email":"contact@maximeculea.fr",
+			"homepage":"https://maximeculea.fr"
+		}
+	],
+	"require":{
+		"php":">=5.6",
+		"composer-plugin-api":"^1.1"
+	},
+	"require-dev":{
+		"composer/composer":"^1.4"
+	},
+	"autoload":{
+		"psr-4":{
+			"MaximeCulea\\ComposerScripts\\MakeStablePlugin\\":"src"
+		}
+	},
+	"extra":{
+		"class":"MaximeCulea\\ComposerScripts\\ComposerMakeStable\\MakeStable"
+	}
+}
