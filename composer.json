@@ -6,7 +6,10 @@
 	"description":"Make all your composer's dependencies stable.",
 	"keywords":[
 		"composer",
+		"composer-script",
 		"package"
+		"stable",
+		"versions"
 	],
 	"authors":[
 		{
