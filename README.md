@@ -2,6 +2,7 @@
 Make all your composer's dependencies stable.
 
 This command is useful especially during an audit. It allows you to grab latest versions of your dependencies.
+
 Once your audit is finished it's recommended to use another command : [Freeze Versions](https://github.com/MaximeCulea/Composer-Freeze-Versions) to keep the versions you have tested.
 
 # What?
