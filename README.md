@@ -1,5 +1,5 @@
 # Composer Stable Versions
-Make all your composer's dependencies stable.
+> Make all your composer's dependencies stable.
 
 This command is useful especially during an audit. It allows you to grab latest versions of your dependencies.
 
