@@ -1,5 +1,5 @@
 {
-	"name":"MaximeCulea/composer-stable-versions",
+	"name":"maximeculea/composer-stable-versions",
 	"type":"composer-plugin",
 	"minimum-stability":"stable",
 	"license":"GPL-3.0+",
