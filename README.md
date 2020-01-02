@@ -12,10 +12,10 @@ Your dependencies into composer.json will be automatically be changed from `"wpa
 # How?
 ## 1 - Add to [Composer](http://composer.rarst.net/)
 
-- From packagist
+- From [Packagist](https://packagist.org/packages/maximeculea/composer-stable-versions)
   - Do `composer require maximeculea/composer-stable-versions`
   
-- From Github 
+- From [Github](https://github.com/MaximeCulea/Composer-Stable-Versions)
   - Add into your composer json `{ "type": "vcs", "url": "https://github.com/MaximeCulea/Composer-Stable-Versions" }`
   - Include `"maximeculea/composer-stable-versions": "dev-master"` in your composer file as require
   - Before use, launch `composer update`
