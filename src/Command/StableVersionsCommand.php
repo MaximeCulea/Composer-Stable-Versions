@@ -20,7 +20,7 @@ class StableVersionsCommand extends BaseCommand {
 		$composer = $this->getComposer();
 
 		// what is the command's purpose
-		if ( false === $io->askConfirmation( "Do you really want to set all dependencies to \"*@stable\" version?", true ) ) {
+		if ( false === $io->askConfirmation( "Do you really want to set all dependencies versions to \"*@stable\"? [y|n]", true ) ) {
 			exit;
 		}
 
