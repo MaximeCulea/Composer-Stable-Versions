@@ -8,7 +8,7 @@ Once your audit is finished it's recommended to use another command : [Freeze Ve
 # What?
 Your dependencies into composer.json will be automatically be changed from `"wpackagist-plugin/wordpress-seo":"6.2"` to `"wpackagist-plugin/wordpress-seo":"*@stable"`.
 
-![See how it works](https://media.giphy.com/media/kFIBMBqzwh8OAjt2XJ/source.gif)
+![See how it works](https://user-images.githubusercontent.com/5576409/71735742-7e087900-2e4f-11ea-867b-786e1c92105e.gif)
 
 # How?
 ## 1 - Add to [Composer](http://composer.rarst.net/)
