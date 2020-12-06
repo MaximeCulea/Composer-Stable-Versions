@@ -23,6 +23,12 @@ class StableVersions implements PluginInterface, Capable, CommandProvider {
 		$this->io       = $io;
 	}
 
+	public function deactivate( Composer $composer, IOInterface $io ) {
+	}
+
+	public function uninstall( Composer $composer, IOInterface $io ) {
+	}
+
 	public function getCapabilities() {
 		return [ 'Composer\Plugin\Capability\CommandProvider' => __NAMESPACE__ . '\\StableVersions' ];
 	}

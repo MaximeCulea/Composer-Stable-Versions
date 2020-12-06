@@ -21,21 +21,21 @@ class StableVersionsCommand extends BaseCommand {
 
 		// what is the command's purpose
 		if ( false === $io->askConfirmation( "Do you really want to set all dependencies versions to \"*@stable\"? [y|n]", true ) ) {
-			exit;
+			return 0;
 		}
 
 		$composerPath = $composer->getConfig()->getConfigSource()->getName();
 		$composerFile = new JsonFile( $composerPath );
 		if ( ! $composerFile->exists() ) {
 			$output->writeln( "<error>Composer file not found.</error>" );
-			exit;
+			return 1;
 		}
 
 		// if we cannot write then bail
-		if ( ! is_writeable( $composerPath ) ) {
+		if ( ! is_writable( $composerPath ) ) {
 			$output->writeln( "<error>The composer.json file cannot be rewritten!</error>" );
 			$output->writeln( "<error>Please check your file permissions.</error>" );
-			exit;
+			return 1;
 		}
 
 		try {
@@ -65,7 +65,7 @@ class StableVersionsCommand extends BaseCommand {
 		} catch( RuntimeException $e ) {
 			$output->writeln( "<error>An error occurred</error>" );
 			$output->writeln( sprintf( "<error>%s</error>", $e->getMessage() ) );
-			exit;
+			return 1;
 		}
 	}
 }
