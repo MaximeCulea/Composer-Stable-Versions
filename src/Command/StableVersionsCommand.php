@@ -67,5 +67,8 @@ class StableVersionsCommand extends BaseCommand {
 			$output->writeln( sprintf( "<error>%s</error>", $e->getMessage() ) );
 			return 1;
 		}
+		
+		// Executed as intended
+		return 1;
 	}
 }
